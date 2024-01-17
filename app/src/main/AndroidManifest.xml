@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Kalemny"
         tools:targetApi="31">
         <activity
+            android:name=".CallingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CallFragment"
+            android:exported="false" />
+        <activity
             android:name=".VerificationFragment"
             android:exported="false" />
         <activity

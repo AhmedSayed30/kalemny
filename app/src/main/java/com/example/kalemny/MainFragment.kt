@@ -19,7 +19,7 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.btnCall.setOnClickListener {
-            val intent = Intent(requireActivity(),::class.java)
+            val intent = Intent(requireActivity(),CallFragment::class.java)
             startActivity(intent)
         }
         binding.btnWallet.setOnClickListener {

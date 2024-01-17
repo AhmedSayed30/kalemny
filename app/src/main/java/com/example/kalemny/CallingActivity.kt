@@ -2,13 +2,14 @@ package com.example.kalemny
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.kalemny.databinding.ActivityCallingBinding
 import com.example.kalemny.databinding.ActivityVerificationBinding
 
-class VerificationActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityVerificationBinding
+class CallingActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityCallingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityVerificationBinding.inflate(layoutInflater)
+        binding = ActivityCallingBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.igBack.setOnClickListener {
             finish()
