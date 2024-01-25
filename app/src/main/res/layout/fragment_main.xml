@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,144 +8,155 @@
         android:id="@+id/tv_first"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="اهلا بيك"
-        android:textSize="48sp"
-        android:textColor="@color/baby_blue"
-        android:textStyle="bold"
         android:layout_marginTop="40dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/tajawal"
+        android:text="اهلا بيك"
+        android:textColor="@color/baby_blue"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/tajawal"
         android:text="ماذا يدور ببالك؟"
-        android:textSize="48sp"
         android:textColor="@color/baby_blue"
-        android:textStyle="bold"
-        android:layout_marginTop="92dp"
-        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_first" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/card_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="214dp"
+        android:layout_marginBottom="220dp"
         android:background="@drawable/card"
         android:paddingVertical="14dp"
         android:paddingTop="15dp"
         android:paddingBottom="94dp"
-        android:layout_marginTop="214dp"
-        android:layout_marginBottom="220dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/card_wallet"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toEndOf="@id/card_wallet"
+        app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:id="@+id/ig_call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/calling_pana"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/btn_call"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_call"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/btn_call"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ig_call"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ig_call" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/card_wallet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingVertical="14dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="94dp"
         android:layout_marginTop="214dp"
         android:layout_marginBottom="220dp"
         android:background="@drawable/card"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/card_shop"
+        android:paddingVertical="14dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/card_call"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toEndOf="@id/card_shop"
+        app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:id="@+id/ig_wallet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/wallet_bro_1"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/btn_wallet"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_wallet"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/btn_wallet"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ig_wallet"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ig_wallet" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/card_shop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingVertical="14dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="94dp"
         android:layout_marginTop="214dp"
         android:layout_marginBottom="220dp"
         android:background="@drawable/card"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toEndOf="@id/card_remove"
+        android:paddingVertical="14dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/card_wallet"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toEndOf="@id/card_remove"
+        app:layout_constraintTop_toTopOf="parent">
+
         <ImageView
             android:id="@+id/ig_shop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ecommerce_checkout_laptop_bro_1"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/btn_bay"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_bay"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/btn_bay"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ig_shop"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ig_shop" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/card_remove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingVertical="14dp"
-        android:paddingTop="15dp"
-        android:paddingBottom="94dp"
         android:layout_marginTop="214dp"
         android:layout_marginBottom="220dp"
         android:background="@drawable/card"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:paddingVertical="14dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/card_shop"
-        app:layout_constraintBottom_toBottomOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/ig_remov"
@@ -156,17 +166,18 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
         <ImageView
             android:id="@+id/btn_cancel"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/btn_cancel"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="10dp"
-            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/btn_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ig_remov"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ig_remov" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
